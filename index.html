@@ -9,45 +9,45 @@
 <body>
     <div class="wrapper">
         <div class="image-container">
-            <div class="mock-sidebar">Yay!</div>
-         <img src="./Images/image.png" width="100" height="auto"/>
-         <div class="image-credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+            <div class="mock-sidebar"></div>
+            <img src="./Images/image.png" width="100" height="auto"/>
+            <div class="image-credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
         </div>
         <div class="form-container">
             <section class="form-section">
                 <p>This is not a real online service! You know you need something like this in your career to help you achieve your deepest dreams. Sign up <i>now</i> to get started.</p>
                 <p class="form-section-p">You <i>know</i> you want to</p>
             </section>
-            <form>
+            <form action="#" method="get">
                 <p>Let's do this!</p>
                 <fieldset class="form-group">
                     <div class="form-subgroup">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" />
-                </div>
-                  <div class="form-subgroup">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name"/>
-                </div>
+                      <label for="first-name">First Name</label>
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" required/>
+                    </div>
+                    <div class="form-subgroup">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" required/>
+                    </div>
                 </fieldset>
                 <fieldset class="form-group">
-                <div class="form-subgroup">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email"/>
-                </div>
-                <div class="form-subgroup">
-                <label for="phone-number">Phone Number</label>
-                <input type="number" name="phone-number" id="phone-number"/>
-                </div>
+                  <div class="form-subgroup">
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="email" autocomplete="email" required/>
+                   </div>
+                   <div class="form-subgroup">
+                      <label for="tel">Phone Number</label>
+                      <input type="tel" name="tel" id="tel" autocomplete="tel" required/>
+                    </div>
                 </fieldset>
                 <fieldset class="form-group">
                     <div class="form-subgroup">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password"/>
+                     <label for="password">Password</label>
+                     <input type="password" name="password" id="password" autocomplete="off" required minlength="8" aria-describedby="password-minlength"/>
                     </div>
                 <div class="form-subgroup">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password"/>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off" required/>
                 </div>
                 </fieldset>
             </form>
